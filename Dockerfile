@@ -1,9 +1,9 @@
-FROM registry.fedoraproject.org/fedora-minimal:34
+FROM registry.fedoraproject.org/fedora-minimal:35
 
 SHELL ["/bin/bash", "-l", "-c"]
 
-RUN microdnf update -y && \
-  microdnf -y install \
+RUN microdnf --nodocs -y update && \
+  microdnf --nodocs -y install \
   nginx \
   tar && \
   microdnf clean all && \
