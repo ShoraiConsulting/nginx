@@ -3,5 +3,4 @@ services:
   nginx-unprivileged:
     build:
       context: .
-      dockerfile: Dockerfile
-    image: ghcr.io/katarti/nginx:latest
+    image: nginx-unprivileged:latest
