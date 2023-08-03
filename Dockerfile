@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-minimal:35
+FROM registry.fedoraproject.org/fedora:38
 
 SHELL ["/bin/bash", "-l", "-c"]
 
