@@ -2,7 +2,7 @@ name: Docker build and push
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
   schedule:
     - cron: "0 2 * * 0"
