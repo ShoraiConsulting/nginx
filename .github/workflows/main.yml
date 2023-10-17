@@ -3,9 +3,23 @@ on:
   push:
     branches:
       - master
-  pull_request:
   schedule:
-    - cron: "0 2 * * 0"
+    - cron: 0 2 * * 0
+
+permissions:
+  actions: write
+  checks: write
+  contents: read
+  deployments: read
+  id-token: none
+  issues: none
+  discussions: none
+  packages: write
+  pages: none
+  pull-requests: write
+  repository-projects: none
+  security-events: write
+  statuses: write
 
 env:
   DOCKER_BUILDKIT: 1
@@ -14,21 +28,6 @@ env:
 
 jobs:
   main:
-    permissions:
-      actions: write
-      checks: write
-      contents: read
-      deployments: read
-      id-token: none
-      issues: none
-      discussions: none
-      packages: write
-      pages: none
-      pull-requests: write
-      repository-projects: none
-      security-events: write
-      statuses: write
-    
     runs-on: ubuntu-latest
 
     steps:
