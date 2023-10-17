@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-minimal:35
+FROM rockylinux:9-minimal
 
 SHELL ["/bin/bash", "-l", "-c"]
 
